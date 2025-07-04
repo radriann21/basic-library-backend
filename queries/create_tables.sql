@@ -1,0 +1,30 @@
+CREATE TABLE libros (
+  id SERIAL PRIMARY KEY,
+  titulo VARCHAR(255) NOT NULL,
+  autor VARCHAR(255) NOT NULL,
+  genero VARCHAR(100) NOT NULL,
+  fecha_publicacion DATE NOT NULL,
+  isbn VARCHAR(20) UNIQUE NOT NULL,
+  paginas INT NOT NULL,
+  disponible BOOLEAN DEFAULT TRUE,
+);
+
+CREATE TABLE usuarios (
+  id SERIAL PRIMARY KEY,
+  nombre VARCHAR(255) NOT NULL,
+  apellido VARCHAR(255) NOT NULL,
+  email VARCHAR(255) UNIQUE NOT NULL,
+  direccion VARCHAR(255) NOT NULL,
+  fecha_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+);
+
+CREATE TABLE prestamos (
+  id SERIAL PRIMARY KEY,
+  libro_id INT NOT NULL,
+  usuario_id INT NOT NULL,
+  fecha_prestamo TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  fecha_devolucion DATE DEFAULT NULL,
+  FOREIGN KEY (libro_id) REFERENCES libros(id) ON DELETE CASCADE,
+  FOREIGN KEY (usuario_id) REFERENCES usuarios(id) ON DELETE CASCADE
+);
+
