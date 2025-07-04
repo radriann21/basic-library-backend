@@ -29,7 +29,7 @@ export default (sequelize) => {
       allowNull: false,
       unique: true,
     },
-    cantidad_paginas: {
+    paginas: {
       type: DataTypes.INTEGER,
       allowNull: false,
     },

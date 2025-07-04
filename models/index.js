@@ -1,8 +1,8 @@
 import { Sequelize, DataTypes } from "sequelize";
-import config from "../config/database";
-import Libro from "./Libro";
-import Usuario from "./Usuario";
-import Prestamos from "./Prestamos";
+import config from "../config/database.js";
+import Libro from "./Libro.js";
+import Usuario from "./Usuario.js";
+import Prestamos from "./Prestamos.js";
 
 const env = process.env.NODE_ENV || "development"
 const dbConfig = config[env]
@@ -28,25 +28,25 @@ db.Prestamos = Prestamos(sequelize, DataTypes)
 
 
 // Definir relaciones entre modelos
-db.Prestamos.belongsTo(Libro, {
+db.Prestamos.belongsTo(db.Libro, {
   foreignKey: "libro_id",
   as: "libro",
   onDelete: "RESTRICT"
 })
 
-db.Prestamos.belongsTo(Usuario, {
+db.Prestamos.belongsTo(db.Usuario, {
   foreignKey: "usuario_id",
   as: "usuario",
   onDelete: "RESTRICT"
 })
 
-db.Libro.hasMany(Prestamos, {
+db.Libro.hasMany(db.Prestamos, {
   foreignKey: "libro_id",
   as: "prestamos",
   onDelete: "RESTRICT"
 })
 
-db.Usuario.hasMany(Prestamos, {
+db.Usuario.hasMany(db.Prestamos, {
   foreignKey: "usuario_id",
   as: "prestamos",
   onDelete: "RESTRICT"
