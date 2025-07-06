@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "titulo": "Cien años de soledad",
+    "autor": "Gabriel García Márquez",
+    "genero": "Ficción, Realismo Mágico",
+    "fecha_publicacion": "1967-06-05",
+    "isbn": "978-84-376-0494-0",
+    "paginas": 417,
+    "disponible": true
+  },
+  {
+    "id": 2,
+    "titulo": "El Principito",
+    "autor": "Antoine de Saint-Exupéry",
+    "genero": "Ficción Infantil, Filosofía",
+    "fecha_publicacion": "1943-04-06",
+    "isbn": "978-0156013915",
+    "paginas": 96,
+    "disponible": true
+  },
+  {
+    "id": 3,
+    "titulo": "La Metamorfosis",
+    "autor": "Franz Kafka",
+    "genero": "Ficción Absurdista, Novela Corta",
+    "fecha_publicacion": "1915-01-01",
+    "isbn": "978-8420677568",
+    "paginas": 96,
+    "disponible": true
+  },
+  {
+    "id": 4,
+    "titulo": "El Cuervo",
+    "autor": "Edgar Allan Poe",
+    "genero": "Poesía Gótica, Horror",
+    "fecha_publicacion": "1845-01-29",
+    "isbn": "978-84-9104-585-6",
+    "paginas": 30,
+    "disponible": true
+  },
+  {
+    "id": 5,
+    "titulo": "El Aleph",
+    "autor": "Jorge Luis Borges",
+    "genero": "Ficción, Cuentos",
+    "fecha_publicacion": "1949-01-01",
+    "isbn": "978-8420473955",
+    "paginas": 216,
+    "disponible": true
+  },
+  {
+    "id": 6,
+    "titulo": "Dune",
+    "autor": "Frank Herbert",
+    "genero": "Ciencia Ficción",
+    "fecha_publicacion": "1965-08-01",
+    "isbn": "978-8445000571",
+    "paginas": 658,
+    "disponible": false
+  },
+  {
+    "id": 7,
+    "titulo": "Un mago de Terramar",
+    "autor": "Ursula K. Le Guin",
+    "genero": "Fantasía, Literatura Juvenil",
+    "fecha_publicacion": "1968-01-01",
+    "isbn": "978-8445076682",
+    "paginas": 183,
+    "disponible": true
+  },
+  {
+    "id": 9,
+    "titulo": "Azul...",
+    "autor": "Rubén Darío",
+    "genero": "Poesía, Cuentos",
+    "fecha_publicacion": "1888-07-21",
+    "isbn": "978-84-376-0449-7",
+    "paginas": 200,
+    "disponible": true
+  },
+  {
+    "id": 10,
+    "titulo": "Harry Potter y la piedra filosofal",
+    "autor": "J.K. Rowling",
+    "genero": "Ficción, Fantasía",
+    "fecha_publicacion": "1997-06-26",
+    "isbn": "978-8437602292",
+    "paginas": 268,
+    "disponible": true
+  }
+]

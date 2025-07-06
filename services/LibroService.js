@@ -48,7 +48,7 @@ export const libroService = {
     }
     try {
       const libro = await Libro.create(libroData)
-      return libro;
+      return libro
     } catch (error) {
       console.error("Error creating libro:", error);
       throw error;
@@ -74,6 +74,7 @@ export const libroService = {
         throw new Error(`Libro con ID ${id} no encontrado.`);
       }
       await libro.destroy()
+      return libro;
     } catch (error) {
       console.error("Error deleting libro:", error);
       throw error;
