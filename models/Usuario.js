@@ -25,13 +25,14 @@ export default (sequelize) => {
       type: DataTypes.STRING,
       allowNull: true,
     },
-    fecha_creacion: {
+    fecha_registro: {
       type: DataTypes.DATE,
       allowNull: false,
       defaultValue: DataTypes.NOW,
     }
   }, {
     tableName: "usuarios",
+    "timestamps": false,
   })
   return Usuario;
 }
